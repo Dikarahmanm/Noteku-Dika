@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noteku</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav_container">
+            <h1 class="nav_brand"><a href="#">NoteKu</a></h1>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <form class="form" id="form_create_note">
+                <h2 class="form_title"> Create Note</h2>
+
+                <div class="form_container">
+                    <div class="form_group">
+                        <label for="title_note">Title</label>
+                        <input type="text" class="form_control" id="title_note" placeholder="Title of note"
+                            name="title_note">
+                    </div>
+                    <div class="form_group">
+                        <label for="title_note">Description</label>
+                        <textarea name="description_note" class="form_control form_control--large" id="description_note"
+                            rows="3" placeholder="Description of note"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn--success mt-28">Submit</button>
+            </form>
+
+            <div class="divider"> </div>
+
+            <section id="notes">
+
+            </section>
+        </div>
+    </main>
+    <script src="./assets/scripts/index.js"></script>
+</body>
+
+</html>
